@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        background-color: rgb(20, 20, 20);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .message {
+        font-size: 27px;
+        letter-spacing: -0.6px;
+        display: inline-block;
+        color: #e5e5e5;
+        font-family: "Nunito", sans-serif;
+      }
+
+      .dev-icon {
+        stroke: #e5e5e5;
+        height: 60px;
+        width: 60px;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .message {
+          font-size: 24px;
+        }
+
+        .dev-icon {
+          height: 53px;
+          width: 53px;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .message {
+          font-size: 21px;
+        }
+        .dev-icon {
+          height: 46px;
+          width: 46px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .message {
+          font-size: 18px;
+        }
+        .dev-icon {
+          height: 39px;
+          width: 39px;
+        }
+      }
+    </style>
+    <title>Site is under development</title>
+  </head>
+  <body>
+    <p class="message">The website is currently under development.</p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="dev-icon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+      />
+    </svg>
+  </body>
+</html>
