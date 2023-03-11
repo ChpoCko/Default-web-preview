@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="code-64.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +13,8 @@
     />
     <style>
       html {
-        background-color: rgb(20, 20, 20);
+        background-color: #141414;
+        font-size: 62.5%;
       }
 
       * {
@@ -27,49 +29,34 @@
         align-items: center;
         height: 100vh;
         flex-direction: column;
-        gap: 12px;
+        gap: 1.2rem;
+        color: #e5e5e5;
       }
 
       .message {
-        font-size: 27px;
+        font-size: 2.4rem;
         letter-spacing: -0.6px;
         display: inline-block;
-        color: #e5e5e5;
+
         font-family: "Nunito", sans-serif;
+        text-align: center;
       }
 
       .dev-icon {
-        stroke: #e5e5e5;
-        height: 60px;
-        width: 60px;
+        height: 3.2rem;
+        width: 3.2rem;
+        fill: #e5e5e5;
       }
 
-      @media only screen and (max-width: 1000px) {
-        .message {
-          font-size: 24px;
+      @media only screen and (max-width: 50em) {
+        html {
+          font-size: 56.25%;
         }
+      }
 
-        .dev-icon {
-          height: 53px;
-          width: 53px;
-        }
-      }
-      @media only screen and (max-width: 800px) {
-        .message {
-          font-size: 21px;
-        }
-        .dev-icon {
-          height: 46px;
-          width: 46px;
-        }
-      }
       @media only screen and (max-width: 500px) {
-        .message {
-          font-size: 18px;
-        }
-        .dev-icon {
-          height: 39px;
-          width: 39px;
+        html {
+          font-size: 50%;
         }
       }
     </style>
@@ -77,18 +64,9 @@
   </head>
   <body>
     <p class="message">The website is currently under development.</p>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="dev-icon"
-    >
+    <?xml version="1.0" ?><svg viewBox="0 0 640 512" class="dev-icon">
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+        d="M416 31.94C416 21.75 408.1 0 384.1 0c-13.98 0-26.87 9.072-30.89 23.18l-128 448c-.8404 2.935-1.241 5.892-1.241 8.801C223.1 490.3 232 512 256 512c13.92 0 26.73-9.157 30.75-23.22l128-448C415.6 37.81 416 34.85 416 31.94zM176 143.1c0-18.28-14.95-32-32-32c-8.188 0-16.38 3.125-22.62 9.376l-112 112C3.125 239.6 0 247.8 0 255.1S3.125 272.4 9.375 278.6l112 112C127.6 396.9 135.8 399.1 144 399.1c17.05 0 32-13.73 32-32c0-8.188-3.125-16.38-9.375-22.63L77.25 255.1l89.38-89.38C172.9 160.3 176 152.2 176 143.1zM640 255.1c0-8.188-3.125-16.38-9.375-22.63l-112-112C512.4 115.1 504.2 111.1 496 111.1c-17.05 0-32 13.73-32 32c0 8.188 3.125 16.38 9.375 22.63l89.38 89.38l-89.38 89.38C467.1 351.6 464 359.8 464 367.1c0 18.28 14.95 32 32 32c8.188 0 16.38-3.125 22.62-9.376l112-112C636.9 272.4 640 264.2 640 255.1z"
       />
     </svg>
   </body>
